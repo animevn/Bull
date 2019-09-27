@@ -12,6 +12,7 @@
 		F116DD76233D919E007C7BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F116DD74233D919E007C7BE5 /* Main.storyboard */; };
 		F116DD78233D919F007C7BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F116DD77233D919F007C7BE5 /* Assets.xcassets */; };
 		F116DD7B233D919F007C7BE5 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F116DD79233D919F007C7BE5 /* Launch.storyboard */; };
+		F116DD83233DA371007C7BE5 /* CreditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116DD82233DA371007C7BE5 /* CreditController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F116DD77233D919F007C7BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F116DD7A233D919F007C7BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Launch.storyboard; sourceTree = "<group>"; };
 		F116DD7C233D919F007C7BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F116DD82233DA371007C7BE5 /* CreditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				F116DD70233D919E007C7BE5 /* AppDelegate.swift */,
 				F116DD72233D919E007C7BE5 /* ViewController.swift */,
+				F116DD82233DA371007C7BE5 /* CreditController.swift */,
 				F116DD74233D919E007C7BE5 /* Main.storyboard */,
 				F116DD79233D919F007C7BE5 /* Launch.storyboard */,
 				F116DD77233D919F007C7BE5 /* Assets.xcassets */,
@@ -137,6 +140,7 @@
 			files = (
 				F116DD73233D919E007C7BE5 /* ViewController.swift in Sources */,
 				F116DD71233D919E007C7BE5 /* AppDelegate.swift in Sources */,
+				F116DD83233DA371007C7BE5 /* CreditController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,7 +296,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.haanhgs.Bull;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,7 +314,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.haanhgs.Bull;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
