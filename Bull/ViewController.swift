@@ -33,18 +33,18 @@ class ViewController: UIViewController {
         sdSlider.value = 50
     }
     
-    private func refreshInfo(){
+    private func setupInfo(){
         info = "Waiting ..."
         lbInfo.text = "\(info)"
     }
     
-    private func refreshTargetAndSlider(){
+    private func setupTargetAndSlider(){
         sdSlider.value = 50
         target = Int(arc4random_uniform(101))
         lbTarget.text = "\(target)"
     }
     
-    private func resfreshTotal(){
+    private func setupTotalScoreAndTotalRound(){
         round = 1
         lbRound.text = "\(round)"
         totalScore = 0
@@ -52,9 +52,9 @@ class ViewController: UIViewController {
     }
     
     private func reset(){
-        refreshTargetAndSlider()
-        refreshInfo()
-        resfreshTotal()
+        setupTargetAndSlider()
+        setupInfo()
+        setupTotalScoreAndTotalRound()
     }
     
     override func viewDidLoad() {
@@ -86,7 +86,7 @@ class ViewController: UIViewController {
     }
     
     private func updateLabels(){
-        refreshTargetAndSlider()
+        setupTargetAndSlider()
         totalScore += score
         lbScore.text = "\(totalScore)"
         round += 1
