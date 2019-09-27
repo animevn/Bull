@@ -3,8 +3,6 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var lbTarget: UILabel!
-    @IBOutlet weak var lbMin: UILabel!
-    @IBOutlet weak var lbMax: UILabel!
     @IBOutlet weak var sdSlider: UISlider!
     @IBOutlet weak var lbInfo: UILabel!
     @IBOutlet weak var lbScore: UILabel!
@@ -13,8 +11,6 @@ class ViewController: UIViewController {
     
     private var target = 0
     private var guess = 0
-    private var min = 0
-    private var max = 100
     private var score = 0
     private var totalScore = 0
     private var round = 0
@@ -44,10 +40,6 @@ class ViewController: UIViewController {
     
     private func refreshLabels(){
         sdSlider.value = 50
-        min = 0
-        lbMin.text = "\(min)"
-        max = 100
-        lbMax.text = "\(max)"
         target = Int(arc4random_uniform(101))
         lbTarget.text = "\(target)"
     }
@@ -62,6 +54,7 @@ class ViewController: UIViewController {
     
     private func reset(){
         refreshLabels()
+        refreshInfo()
         resfreshTotal()
     }
     
@@ -72,7 +65,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupSlider()
-        
+        reset()
        
     }
     
