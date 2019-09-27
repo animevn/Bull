@@ -49,7 +49,6 @@ class ViewController: UIViewController {
         lbRound.text = "\(round)"
         totalScore = 0
         lbScore.text = "\(totalScore)"
-        
     }
     
     private func reset(){
@@ -74,15 +73,13 @@ class ViewController: UIViewController {
         }else if abs(guess - target) == 1{
             score = 90
         }else if abs(guess - target) == 2{
-            score = 80
-        }else if abs(guess - target) == 3{
             score = 70
-        }else if abs(guess - target) == 4{
-            score = 60
-        }else if abs(guess - target) == 5{
+        }else if abs(guess - target) == 3{
             score = 50
-        }else if abs(guess - target) == 6{
+        }else if abs(guess - target) == 4{
             score = 30
+        }else if abs(guess - target) == 5{
+            score = 10
         }else {
             score = 0
         }
@@ -102,9 +99,22 @@ class ViewController: UIViewController {
         updateLabels()
     }
     
+    private func showAlertWhenClickResetButton(){
+        let alert = UIAlertController(title: "Reset game",
+                                      message: "Your game data will be reset",
+                                      preferredStyle: .alert)
+        let actionOk = UIAlertAction(title: "OK",
+                                     style: .default,
+                                     handler: {action in self.reset()})
+        let actionCancel = UIAlertAction(title: "Cancel", style: .default, handler: nil)
+        alert.addAction(actionOk)
+        alert.addAction(actionCancel)
+        present(alert, animated: true, completion: nil)
+    }
+    
     
     @IBAction func onRefreshClick(_ sender: UIButton) {
-        reset()
+        showAlertWhenClickResetButton()
     }
     
 
