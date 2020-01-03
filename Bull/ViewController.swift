@@ -8,7 +8,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var lbRound: UILabel!
     @IBOutlet weak var lbInfo: UILabel!
     
-    
     private var target = 0
     private var guess = 0
     private var score = 0
@@ -16,6 +15,7 @@ class ViewController: UIViewController {
     private var round = 0
     private var info = ""
     
+    //just test
     private func setupSlider(){
         sdSlider.setThumbImage(UIImage(named: "sliderThumbNormal"), for: .normal)
         sdSlider.setThumbImage(UIImage(named: "sliderThumbHighlight"), for: .highlighted)
@@ -29,7 +29,6 @@ class ViewController: UIViewController {
         let rightTrack = UIImage(named: "sliderTrackerRight")
         let rightSize = rightTrack!.resizableImage(withCapInsets: inset)
         sdSlider.setMaximumTrackImage(rightSize, for: .normal)
-        
         sdSlider.value = 50
     }
     
@@ -116,7 +115,4 @@ class ViewController: UIViewController {
     @IBAction func onRefreshClick(_ sender: UIButton) {
         showAlertWhenClickResetButton()
     }
-    
-
 }
-
