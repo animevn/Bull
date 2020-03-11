@@ -178,6 +178,7 @@
                         <outlet property="lbRound" destination="M7i-yG-Kme" id="bOD-lC-Pxx"/>
                         <outlet property="lbScore" destination="DVX-eX-8x9" id="76y-qg-4G5"/>
                         <outlet property="lbTarget" destination="t6e-RK-81X" id="yIP-r0-bIg"/>
+                        <outlet property="sdGuess" destination="oEZ-LE-nP0" id="iU0-IL-csH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

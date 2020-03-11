@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		515D68422418F7BD00E8A8EC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515D68412418F7BD00E8A8EC /* Model.swift */; };
+		51FF2D8224191D8A004D3E1E /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FF2D8124191D8A004D3E1E /* Base.swift */; };
 		F116DD71233D919E007C7BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116DD70233D919E007C7BE5 /* AppDelegate.swift */; };
 		F116DD73233D919E007C7BE5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F116DD72233D919E007C7BE5 /* ViewController.swift */; };
 		F116DD76233D919E007C7BE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F116DD74233D919E007C7BE5 /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		515D68412418F7BD00E8A8EC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		51FF2D8124191D8A004D3E1E /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		F116DD6D233D919E007C7BE5 /* Bull.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bull.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F116DD70233D919E007C7BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F116DD72233D919E007C7BE5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				515D68412418F7BD00E8A8EC /* Model.swift */,
+				51FF2D8124191D8A004D3E1E /* Base.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 			files = (
 				F116DD73233D919E007C7BE5 /* ViewController.swift in Sources */,
 				F116DD71233D919E007C7BE5 /* AppDelegate.swift in Sources */,
+				51FF2D8224191D8A004D3E1E /* Base.swift in Sources */,
 				F116DD83233DA371007C7BE5 /* CreditController.swift in Sources */,
 				515D68422418F7BD00E8A8EC /* Model.swift in Sources */,
 			);
