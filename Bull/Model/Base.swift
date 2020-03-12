@@ -7,5 +7,9 @@ struct Base{
     static let sliderTrackLeft:String = "sliderTrackerLeft"
     static let sliderTrackRight:String = "sliderTrackerRight"
     
+    static let alertTitle = "Reset Game"
+    static let alertMessage = "Your game data will be reset"
     
+    static let okTitle = "OK"
+    static let cancelTitle = "Cancel"
 }

@@ -51,8 +51,4 @@ struct Model{
         round += 1
         info = "Your choice is \(guess) and your score is \(score)"
     }
-    
-    
-    
-    
 }
